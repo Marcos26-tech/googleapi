@@ -5,7 +5,7 @@ from processdata import processdata #arquivo criado no passo anterior, ele conve
 
 app = Flask(__name__)
 CORS(app)# Neste caso, a URL direcionará para home.
-@app.route('/')
+@app.route('/displaylocations')
 def displaylocations():    # Puxa os arquivos do CSV
    l = processdata()    # Entrega os dados para o serviço que chamou essa API.
    return jsonify(l)

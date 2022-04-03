@@ -6,3 +6,4 @@ def processdata():    # Carregando o arquivo .csv
    df = df.to_dict(orient = 'records')
    print(df) # Exibindo a lista criada
    return df
+
